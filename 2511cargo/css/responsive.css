@@ -93,4 +93,63 @@
     .side ul {
         margin-left: 20px;
     }
+/*    Section 4 Список услуг */
+    .service-card {
+        width: 33.3333%;
+    }
+    .service-card.size-2 {
+        width: 50%;
+    }
+    .service-card.size-2 .service-text {
+        min-height: 250px;
+    }
+    .budget {
+        width: 100%;
+        text-align: center;
+    }
+    .budget input {
+        display: block;
+        margin: 10px auto;
+    }
+}
+@media screen and (max-width:640px) {
+    form.leave-request input, form.leave-request .button-w-text {
+        display: block;
+        margin: 10px auto;
+        width: 70%;
+    }
+    .button-w-text .button {
+        width: 100%;
+    }
+}
+@media screen and (max-width:570px) {
+    /*    Section 4 Список услуг */
+    .service-card {
+        width: 50%;
+    }
+        .service-card.size-2 {
+        width: 400px;
+    }
+    .service-card.size-2 .service-text {
+        min-height: auto;
+    }
+}
+@media screen and (max-width:450px) {
+    /*    Section 4 Список услуг */
+    .service-card, .service-card.size-2 {
+        width: 300px;
+    }
+    .service-text {
+        min-height: auto;
+    }
+    form.leave-request input, form.leave-request .button-w-text {
+        width: 100%;
+    }
+    form.budget input {
+        width: 300px;
+    }
+    form.budget .button-w-text {
+        width: 300px;
+        margin: 0;
+    }
 }

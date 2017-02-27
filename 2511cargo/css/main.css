@@ -192,8 +192,9 @@ ul li::before {
     border: 0px;
     text-align: center;
     padding: 10px;
-
+    background-color: orange;
 }
+
 .lined::before {
     content: "";
     position: relative;
@@ -211,7 +212,7 @@ ul li::before {
 }
 form {
     width: auto;
-    width: 920px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -228,16 +229,26 @@ form input[type=text], form input[type=phone] {
     border: 2px solid #b6b6b6;
 }
 input[type=text] {
-    background: url(../img/name.png) no-repeat 5px;
-    background-size: 20px;
-    padding-left: 30px;
+    
 }
 input[type=phone] {
-    background: url(../img/number.png) no-repeat 5px;
-    background-size: 20px;
-    padding-left: 30px;
     margin: 0 10px;
 } 
+input.iconed {
+    background-size: 20px;
+    padding-left: 30px;
+    padding-left: 30px;
+    background-size: 20px;
+    background-position: 5px;
+    background-repeat: no-repeat;
+}
+.iconed.user {
+    background-image: url(../img/name.png);
+}
+.iconed.phone {
+    background-image: url(../img/number.png);
+}
+
 form .text {
     display: inline-block;
     font-size: 12px;
@@ -274,6 +285,12 @@ form .button {
     padding: 10px;
     text-align: center;
 }
+.service-card.size-2 {
+    width: 33.3333%;
+}
+.service-card.size-2 .service-text {
+    min-height: 270px;
+}
 .service-text {
     text-align: left;
     font-size: 13px;
@@ -303,6 +320,127 @@ form .button {
     width: 100%;
     box-sizing: border-box;
     padding: 5px 0;
+}
+.service-card .icon img {
+    width: 100px;
+}
+/*Section 5 Circle*/
+
+.section-5, .section-5 .page {
+    position: relative;
+}
+
+.background-overlay.gray {
+    background-color: #b8b8b8;
+    opacity: 0.85;
+}
+.circle {
+    position: relative;
+    height: 700px;
+}
+.circle-center {
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+    top: 35%;
+}
+.circle-center img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.circle-text {
+    font-size: 10px;
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    text-align: center;
+}
+
+
+.circle-text.text-6 {transform: rotate(15deg) translate(160%) rotate(-15deg);}
+.circle-text.text-10 {transform: rotate(45deg) translate(160%) rotate(-45deg);}
+.circle-text.text-9 {transform: rotate(90deg) translate(160%) rotate(-90deg);}
+.circle-text.text-8 {transform: rotate(135deg) translate(160%) rotate(-135deg);}
+.circle-text.text-7 {transform: rotate(170deg) translate(170%) rotate(-170deg);}
+.circle-text.text-5 {transform: rotate(195deg) translate(170%) rotate(-195deg);}
+.circle-text.text-3 {transform: rotate(225deg) translate(160%) rotate(-225deg);}
+.circle-text.text-1 {transform: rotate(270deg) translate(160%) rotate(-270deg);}
+.circle-text.text-2 {transform: rotate(310deg) translate(160%) rotate(-310deg);}
+.circle-text.text-4 {transform: rotate(345deg) translate(160%) rotate(-345deg);}
+
+/*Section 6 BUDGET */
+
+.section-6, .section-6 .page {
+    position: relative;
+}
+.background-overlay.orange {
+    background-color: orange;
+    opacity: 0.5;
+}
+.iconed.loc-icon {
+    background-image: url(../img/location.png);
+}
+.budget {
+    width: 650px;
+    text-align: center;
+}
+.budget input {
+    margin: 3px;
+    width: 300px;
+}
+.budget .text {
+    color: white;
+}
+.budget .button-w-text {
+    width: 310px;
+    margin: 5px;
+}
+
+/* Section 7 Scheme */
+.scheme {
+    text-align: right;    
+}
+.scheme .icon {
+    width: 100px;
+    margin: 0 auto;
+}
+.scheme .icon img {
+    width: 100%;
+}
+.scheme .step {
+    width: 33.3333%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 280px;
+    position: relative;
+}
+.step-1::after, .step-2::after , .step-3::after , .step-4::after {
+    content: "";
+    background: url(../img/arrow.png) no-repeat 50% 50%;
+    background-size: 100px 50px;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+}
+.step-1::after, .step-2::after {
+    top: 35px;
+    right: -50px;
+}
+.step-3::after {
+    left: 70px;
+    transform: rotate(90deg);
+}
+.step-4::after {
+    top: 35px;
+    right: -50px;
+    transform: rotate(180deg);
 }
 /*================ icons ======================*/
 
