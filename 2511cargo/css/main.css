@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&subset=cyrillic,cyrillic-ext');
+
+/*================ GENERAL ======================*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+section>div {
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.page {
+    margin: 25px;
+}
+.main {
+    color: white;
+    text-align: left;
+    background-image: url(../img/background.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.background-overlay {
+    position: absolute;
+    max-width: auto;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+.main .page {
+    position: relative;
+}
+p {
+    text-align: center;
+    margin: 15px 0;
+}
+/*================ fonts ======================*/
+
+
+p {
+    font-size: 14px;
+    line-height: 14px;
+}
+.open-menu-button, .close-menu-button {
+    display: inline-block;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.header_first-line .open-menu-button {
+    background: url(../img/hamburger.png) no-repeat 50% 50%;
+    background-size: 30px;
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    top: 9px;
+}
+.close-menu-button {
+    background: url(../img/close.png)no-repeat 50% 50%;
+    background-size: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/*Header*/
+
+
+.header .logo {
+    display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+}
+.header .logo img {
+    width: 100%;
+}
+
+.menu {
+    text-align: justify;
+    -ms-text-align-last: justify;
+    text-align-last: justify;
+}
+.menu a {
+    display: inline-block;
+    text-align: left;
+    -ms-text-align-last: left;
+    text-align-last: left;
+    color: white;
+}
+.menu-link {position: relative;}
+.menu-link::before, .menu-link.active::before {
+    content: "_";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -8px;
+    font-size: 40px;
+    line-height: 25px;
+    color: transparent;
+    transition: 0.2s ease;
+    transform: translateX(-100%);
+}
+.menu-link:hover::before, .menu-link.active::before {
+    color: orange;
+    transform: translateX(0);
+}
+/*
+.menu .clear {
+    clear: both;
+    width: 100%;
+    float: none;
+}
+*/
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+.bold{
+    font-weight: 900;
+}
+.side{
+    width: 50%;
+    float: left;
+    margin: 10px 0;
+}
+.side .video {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+.video::after {
+    content: "";
+    background: url(../img/play-button.png) no-repeat 50% 50%;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.side .video img {
+    width: 100%;
+}
+.side ul {
+    margin-left: 40px;
+}
+ul li {
+    list-style-type: none;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 10px;
+}
+ul li::before {
+    content: '';
+    background: url(../img/tick.png) no-repeat 50% 50%;
+    background-size: 100% auto;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: -20px;
+    display: inline-block;
+}
+            /* SECTION 2 */
+.button {
+    background-color: orange;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px #000;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 0 3px 1px rgba(0,0,0,0.3);
+    border: 0px;
+    text-align: center;
+    padding: 10px;
+
+}
+.lined::before {
+    content: "";
+    position: relative;
+    width: 30px;
+    height: 8px;
+    background-color: orange;
+    bottom: 5px;
+    display: inline-block;
+}
+.bold.orange {
+    color: orange;
+}
+.lowercase {
+    text-transform: none;
+}
+form {
+    width: auto;
+    width: 920px;
+    margin: 0 auto;
+}
+
+form input {
+    height: 38px;
+    vertical-align: middle;
+    font-family: 'Roboto', sans-serif;  
+    width: 300px;
+}
+
+form input[type=text], form input[type=phone] {
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px solid #b6b6b6;
+}
+input[type=text] {
+    background: url(../img/name.png) no-repeat 5px;
+    background-size: 20px;
+    padding-left: 30px;
+}
+input[type=phone] {
+    background: url(../img/number.png) no-repeat 5px;
+    background-size: 20px;
+    padding-left: 30px;
+    margin: 0 10px;
+} 
+form .text {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #999;
+}
+form .button {
+    width: 100%;
+}
+.button-w-text {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+/* Section 3*/
+.section-3 {
+    background: url(../img/background.jpg) no-repeat 50% 50%;
+    position: relative;
+}
+.section-3 .page {
+    position: relative;
+}
+/*Section 4*/
+.services {
+    text-align: center;
+}
+.service-card {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+.service-text {
+    text-align: left;
+    font-size: 13px;
+    position: relative;
+    margin: 10px 0;
+    min-height: 200px;
+}
+.service-text.lined::before {
+    position: absolute;
+    top: -5px;
+    height: 2px;
+    width: 30px;
+    left: 50%;
+    margin-left: -15px;
+}
+.service-card .title {
+    display: table-cell;
+    height: 80px;
+    width: inherit;
+    vertical-align: middle;
+    margin: 10px 0;
+}
+
+.services .button {
+    margin: 10px 0;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+/*================ icons ======================*/
+
+.location::before {
+    content: '';
+    background: url(../img/location.png) no-repeat 0% 50%;
+    background-size: 100% auto;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    display: block;
+    left:0;
+    bottom:8px;
+    line-height: 14px;
+}
+.location::after {
+    content: '';
+    background: url(../img/triangle.png) no-repeat 0% 50%;
+    background-size: 100% auto;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    display: block;
+    right:5px;
+    bottom:0;
+    line-height: 14px;
+}
+/*Other*/
+
+.overlay {position: absolute; height: 100%; top: 0; left: 0; background-color: black; width: 100%; opacity: 0.5; display: none;}
+.background-overlay.white {
+    background-color: white;
+    opacity: 0.85;
+}

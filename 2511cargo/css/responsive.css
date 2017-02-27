@@ -1,0 +1,96 @@
+@media screen and (max-width: 980px) {
+    section>div {
+        width: 100%;
+    }
+    .page {
+        margin: 10px;
+    }
+    .main{
+        background-size: cover;
+    }
+    form {
+        width: 100%;
+        text-align: center;
+    }
+    form input {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:910px) {
+    .header_first-line .logo {
+        display: none;
+    }
+    .header_first-line {
+        height: 58px;
+        position: relative;
+    }
+    .header_first-line .menu-with-button {
+        transform: translate3d(-100%, 0, 0);
+        transition: all 0.3s ease;
+        height: 100%;
+        display: inline-block;
+        width: auto;
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        width: 250px;
+        z-index: 1;
+    }
+    .header_first-line .menu-link {
+        text-align: left;
+        -ms-text-align-last: auto;
+        text-align-last: auto;
+        padding: 5px 20px;
+        color: black;
+        display: block;
+    }
+    .menu-link::before {
+        content: "";
+        height: 20px;
+        width: 4px;
+        background-color: transparent;
+        left: 15px;
+        top: 5px;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .menu-link:hover::before, .menu-link.active::before {
+        content: "";
+        height: 20px;
+        width: 4px;
+        background-color: orange;
+        left: 15px;
+        font-size: 20px;
+        font-weight: 900;
+        top: 5px;
+    }
+    .menu-link {
+        margin: 10px 0px;
+    }
+    .header_first-line .menu-with-button .close-menu-button {
+        top: 10px;
+        right: -30px;
+    }
+    .header_first-line .open-menu-button {
+        display: inline-block;
+    }
+    .menu-with-button.open {
+        transform: translate3d(0, 0, 0);
+    }
+    .show {
+        display: inline-block;
+    }
+}
+@media screen and (max-width:767px) {
+    .side {
+        width: 100%;
+    }
+    .side .video {
+        margin: 0 auto;
+    }
+    .side ul {
+        margin-left: 20px;
+    }
+}
