@@ -111,7 +111,41 @@
         display: block;
         margin: 10px auto;
     }
+    .scheme .step {
+        width: 50%;
+    }
+    .step-2::after {
+        transform: rotate(90deg);
+        top: 78%;
+        right: 36%;
+    }
+    .scheme .step-3 {
+        float: right;
+    }
+    
+    .step-3::after {
+        background: none;
+    }
+
+    .step-5 {
+        float: left;
+        position: relative;
+    }
+    .step-5::after {
+        content: "";
+        background: url(../img/arrow.png) no-repeat 50% 50%;
+        background-size: 100px 50px;
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+        position: absolute;
+        top: -22%;
+        left: 35%;
+        transform: rotate(90deg);
+    }
+    .step-1::after, .step-2::after , .step-3::after , .step-4::after
 }
+
 @media screen and (max-width:640px) {
     form.leave-request input, form.leave-request .button-w-text {
         display: block;
@@ -120,6 +154,12 @@
     }
     .button-w-text .button {
         width: 100%;
+    }
+    .step.step-2::after {
+        right: 32%;
+    }
+    .step-5::after {
+        left: 33%;
     }
 }
 @media screen and (max-width:570px) {
@@ -132,6 +172,26 @@
     }
     .service-card.size-2 .service-text {
         min-height: auto;
+    }
+    .step.step-2::after {
+        right: 31%;
+    }
+    .step-5::after {
+        left: 31%;
+    }
+}
+@media screen and (max-width:530px) {
+    .step-1::after, .step-2::after , .step-3::after , .step-4::after, .step-5::after {
+        background: none;
+    }
+    .scheme {
+        text-align: center;
+    }
+    .scheme .step-1, .scheme .step-2 , .scheme .step-3 , .scheme .step-4, .scheme .step-5 {
+        width: 300px;
+        float: none;
+        height: auto;
+        margin: 10px 0;
     }
 }
 @media screen and (max-width:450px) {

@@ -434,14 +434,52 @@ form .button {
     right: -50px;
 }
 .step-3::after {
-    left: 70px;
+    left: 37%;
+    top: 78%;
     transform: rotate(90deg);
+    width: 80px;
+    background-size: 80px 30px;
 }
 .step-4::after {
     top: 35px;
     right: -50px;
     transform: rotate(180deg);
 }
+/*Section 8*/
+.section-8 .side {
+    box-sizing: border-box;
+    padding: 5px;    
+}
+.section-8 .slider {
+    box-sizing: border-box;
+    padding: 0 50px;
+    position: relative;
+}
+.section-8 .side .title, .section-8 .side p {
+    text-align: left;
+    margin: 0 0 10px 20px;
+}
+.section-8 .slide-line-slider .slick-active.slick-current {
+    opacity: 0.5;
+}
+.section-8 .slider .slider-left, .section-8 .slider .slider-right {
+    width: 30px;
+    height: 43px;
+    position: absolute;
+    margin-top: -20px;
+    cursor: pointer;    
+    top: 50%;
+}
+.section-8 .slider .slider-left {
+    background: url(../img/slider-left.png) no-repeat 50% 50%;
+    background-size: 100% auto;
+    left: 0px;
+}
+.section-8 .slider .slider-right {
+    background: url(../img/slider-right.png) no-repeat 50% 50%;
+    background-size: 100% auto;
+    right: 0px;
+} 
 /*================ icons ======================*/
 
 .location::before {
