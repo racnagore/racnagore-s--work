@@ -480,6 +480,43 @@ form .button {
     background-size: 100% auto;
     right: 0px;
 } 
+.product-page_pics {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-bottom: 12px;
+}
+.gallery-top {
+    width: 100%;
+    height: 88%;
+    }
+.gallery-top .swiper-slide {
+    text-align: center;
+}
+.gallery-top img {
+    width: auto;
+    max-height: 100%;
+}
+.swiper-container.gallery-thumbs {
+    height: 15%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    }
+.gallery-thumbs .swiper-slide {
+    height: 100%;
+    width: auto;
+    text-align: center;
+    border: 1px solid #c8c8c8;
+    box-sizing: border-box;
+    }
+.gallery-thumbs img {
+    height: 100%;
+    width: auto;
+}
+.gallery-thumbs .swiper-slide-active {
+    border-color: #0088CB;
+    }
+
 /*================ icons ======================*/
 
 .location::before {
