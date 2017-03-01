@@ -25,6 +25,13 @@
         height: 58px;
         position: relative;
     }
+    .logo.cleared {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -137.5px;
+    }
     .header_first-line .menu-with-button {
         transform: translate3d(-100%, 0, 0);
         transition: all 0.3s ease;
@@ -143,9 +150,38 @@
         left: 35%;
         transform: rotate(90deg);
     }
-    .step-1::after, .step-2::after , .step-3::after , .step-4::after
+/*  Section 10 */
+    .column-list {
+        width: auto;
+    }
+    .column-list li, .column-list li:nth-child(odd) {
+        display: block;
+        width: auto;
+    }
+/*    section 13 */
+    .lined-text {
+        width: 50%;
+    }
 }
-
+@media screen and (max-width:640px) {
+/*    section 14*/
+    .achievement {
+        width: 25%;
+        height: 175px;
+    }
+/*    section 14 */
+    .management .container {
+        box-sizing: border-box;
+        padding: 30px;
+        position: relative;
+    }
+    .manager {
+        width: 50%;
+    }
+    .pictures .pic {
+        width: 50%;
+    }
+}
 @media screen and (max-width:640px) {
     form.leave-request input, form.leave-request .button-w-text {
         display: block;
@@ -160,6 +196,15 @@
     }
     .step-5::after {
         left: 33%;
+    }
+/*    Section 9 */
+    .card {
+        width: 50% ;
+    }
+}
+@media screen and (max-width:600px) {
+    .circle-icon {
+        width: 25%;
     }
 }
 @media screen and (max-width:570px) {
@@ -179,6 +224,14 @@
     .step-5::after {
         left: 31%;
     }
+/*    section 13*/
+    .lined-text {
+        width: 300px;
+    }
+    /*    section 14*/
+    .achievement {
+        width: 33.333%;
+    }
 }
 @media screen and (max-width:530px) {
     .step-1::after, .step-2::after , .step-3::after , .step-4::after, .step-5::after {
@@ -192,6 +245,13 @@
         float: none;
         height: auto;
         margin: 10px 0;
+    }
+    .circle-icon {
+        width: 33.3333%;
+    }
+    /*    section 14*/
+    .achievement {
+        width: 50%;
     }
 }
 @media screen and (max-width:450px) {
@@ -211,5 +271,50 @@
     form.budget .button-w-text {
         width: 300px;
         margin: 0;
+    }
+    .circle-icon {
+        width: 50%;
+    }
+/*    Section 9 */
+    .card {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .pictures .pic {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    /*Section 12 */
+    .section-12 .button {
+        width: 280px;
+    }
+        /*    section 14*/
+    .achievement {
+        width: 100%;
+    }
+/*    section 15*/
+    .management {
+        position: relative;
+        padding: 10px;
+    }
+    .management .container {
+        overflow: auto;
+    }
+    .manager {
+        width: 100%;
+    }
+    .management .slider-left, .management .slider-right {
+        position: absolute;
+        width: 20px;
+        height: 29px;
+        top: 50%;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .management .slick-slide {
+        margin-bottom: 20px;
     }
 }

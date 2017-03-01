@@ -25,6 +25,7 @@ $('.open-menu-button').click(function(){
         slidesToScroll: 1, 
         focusOnSelect:true,
         swipe: false,
+        adaptiveHeight: true
 	  });
 		$('.slider .container .slide').each(function(i,val){
 		//в каждом сладе находим сладеры
@@ -46,6 +47,55 @@ $('.open-menu-button').click(function(){
 			asNavFor:bigSlider //опция использовать указанный сладер как навигацию для этого
 		});
 	});
+    if (screen.width <= '400') {
+        $('.management .container').slick({
+           arrows: true,
+           prevArrow:$('.management .slider-left'), 
+           nextArrow:$('.management .slider-right'),
+            slidesToShow:1,
+            slidesToScroll:1,
+            focusOnSelect:true,
+        });
+    };
+    $('.line-slider .container').slick({
+    prevArrow:$('.line-slider .slider-left'), 
+    nextArrow:$('.line-slider .slider-right'),
+    infinte: false,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 979,
+            settings: {
+                slidesToShow: 4,
+                infinte: true,
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3,
+                infinte: true
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2,
+                infinte: true
+            }
+        },
+        {
+            breakpoint: 400,
+            settings: {
+                slidesToShow: 1,
+                infinte: true
+            }
+        }
+    ]
+});
 });
 //    var galleryTop = new Swiper('.gallery-top', {
 //        spaceBetween: 10,
